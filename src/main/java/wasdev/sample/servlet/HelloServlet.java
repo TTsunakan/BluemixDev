@@ -17,7 +17,7 @@ public class HelloServlet extends HttpServlet{
 	private HelloBean helloBean;
 	
 	public void doGet(HttpServletRequest req,HttpServletResponse res)throws ServletException,IOException{
-		res.setContentType("text/html charset=UTF-8");
+		res.setContentType("text/html; charset=UTF-8");
 		
 		PrintWriter out = res.getWriter();
 		out.println("<html><body>");
